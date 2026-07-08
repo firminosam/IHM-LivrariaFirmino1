@@ -1,0 +1,69 @@
+/**
+ * Livraria Sambambi - Estilos das Páginas de Políticas
+ * Usado por: politicaPrivacidade.html e termosUso.html
+ * (Antes estava embutido em <style> dentro do HTML - agora separado corretamente)
+ */
+
+.policy__section {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    background-color: var(--extra-light);
+}
+
+.policy__container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e2e8f0;
+}
+
+.policy__container h1 {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.policy__container p {
+    font-size: 1rem;
+    color: var(--text-dark);
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}
+
+.policy__container h2 {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    border-bottom: 2px solid #e2b13c;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.policy__container ul {
+    margin-bottom: 1.2rem;
+    padding-left: 1.5rem;
+}
+
+.policy__container ul li {
+    list-style-type: disc;
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .policy__container {
+        padding: 1.8rem;
+    }
+
+    .policy__container h1 {
+        font-size: 1.7rem;
+    }
+}
