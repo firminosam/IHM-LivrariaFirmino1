@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça os serviços da Livraria Sambambi. Desde leitura no local em salas equipadas, venda de e-books, reservas de salas de grupo até clubes de leitura.">
+    <meta name="keywords" content="serviços, e-books, sala de leitura, estudo em grupo, impressão académica, clube de leitura, livraria, angola">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" />
+    <link rel="stylesheet" href="../css/styleHome.css">
+    <link rel="stylesheet" href="../css/services.css">
+    <title>Nossos Serviços | Livraria Sambambi</title>
+    
+    <!-- Rastreamento: Google Analytics Placeholder (Exame IHM) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXX-Y');
+    </script>
+    
+    <!-- Rastreamento: Meta Pixel Placeholder (Exame IHM) -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1234567890');
+        fbq('track', 'PageView');
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="nav__header">
+            <div class="nav__logo">
+                <a href="../html/Home.html" aria-label="Página Inicial"><img src="../media/Marca.png" alt=""></a>
+                <a href="../html/Home.html" class="logo">Livraria<span>Sambambi</span></a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div> 
+        <ul class="nav__links" id="nav-links">
+            <li><a href="../html/Home.html">Home</a></li>
+            <li><a href="../html/livros.html">Livros</a></li>
+            <li><a href="../html/services.html" class="active">Serviços</a></li>
+            <li><a href="../html/blog.html">Blog</a></li>
+            <li><a href="../html/sobreNos.html">Sobre Nós</a></li>
+            <li><a href="../html/contactos.html">Contactos</a></li>
+            <li>
+                <a href="login.html" class="nav__btn">Login</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <section class="section__container services__container">
+        <h2 class="section__header reveal">Nossos Serviços</h2>
+        <p class="section__subheader">Oferecemos a melhor experiência académica e literária para apoiar o seu sucesso universitário.</p>
+        
+        <div class="services__grid">
+            <!-- Serviço 1: Leitura no Local -->
+            <a href="../html/livros.html" class="services__card reveal">
+                <div class="service__img-box">
+                    <img src="../media/library.jpg" alt="Leitura no Local">
+                </div>
+                <div class="service__info-box">
+                    <div class="services__icon">
+                        <i class="ri-book-open-line"></i>
+                    </div>
+                    <h4>Leitura no Local</h4>
+                    <p>Ambiente calmo, silencioso e totalmente equipado com mesas de estudo e excelente iluminação para que possa ler e pesquisar no acervo físico com total conforto.</p>
+                    <span class="service__cta">Ver livros disponíveis <i class="ri-arrow-right-line"></i></span>
+                </div>
+            </a>
+
+            <!-- Serviço 2: Venda de E-books -->
+            <a href="../html/Vendas.html" class="services__card reveal">
+                <div class="service__img-box">
+                    <img src="../media/best remote jobs for beginners.jpg" alt="Venda de E-books">
+                </div>
+                <div class="service__info-box">
+                    <div class="services__icon">
+                        <i class="ri-tablet-line"></i>
+                    </div>
+                    <h4>Venda de E-books</h4>
+                    <p>Aceda ao nosso catálogo digital de manuais escolares e literários em formato PDF e ePub e compre-os instantaneamente para leitura rápida em qualquer e-reader.</p>
+                    <span class="service__cta">Ir para a loja de e-books <i class="ri-arrow-right-line"></i></span>
+                </div>
+            </a>
+
+            <!-- Serviço 3: Download de Livros -->
+            <a href="../html/livros.html" class="services__card reveal">
+                <div class="service__img-box">
+                    <img src="../media/medium-shot-students-library.jpg" alt="Download de Livros">
+                </div>
+                <div class="service__info-box">
+                    <div class="services__icon">
+                        <i class="ri-download-line"></i>
+                    </div>
+                    <h4>Download de Livros Académicos</h4>
+                    <p>Descarregue resumos de aulas, apostilas de apoio recomendadas por professores e clássicos literários de domínio público para enriquecer os seus estudos sem custos.</p>
+                    <span class="service__cta">Ver catálogo para download <i class="ri-arrow-right-line"></i></span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECÇÃO GALERIA DE INSTALAÇÕES (Imagens em destaque) -->
+    <section class="section__container gallery__section">
+        <h2 class="section__header reveal">Os Nossos Espaços</h2>
+        <p class="section__subtitle">Conheça o ambiente acolhedor e moderno que preparámos para o seu desenvolvimento académico.</p>
+        
+        <div class="gallery__grid">
+            <div class="gallery__card reveal">
+                <img src="../media/library.jpg" alt="Sala de Leitura Principal">
+                <div class="gallery__info">
+                    <h4>Sala de Leitura Principal</h4>
+                    <p>Milhares de livros físicos ao seu dispor.</p>
+                </div>
+            </div>
+            <div class="gallery__card reveal">
+                <img src="../media/medium-shot-students-library.jpg" alt="Áreas de Estudo Coletivo">
+                <div class="gallery__info">
+                    <h4>Estudo Coletivo</h4>
+                    <p>Zonas abertas para partilha de conhecimento.</p>
+                </div>
+            </div>
+            <div class="gallery__card reveal">
+                <img src="../media/Bookstore stock i.jpg" alt="Receção e Café Sambambi">
+                <div class="gallery__info">
+                    <h4>Receção e Acervo</h4>
+                    <p>Atendimento personalizado e suporte ao leitor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <div class="footer__logo">
+                    <a href="../html/Home.html" aria-label="Página Inicial"><img src="../media/Marca.png" alt="Logo"></a>
+                    <a href="../html/Home.html" class="logo">Livraria<span>Sambambi</span></a>
+                </div>
+                <p>
+                    Descubra livros académicos, literários e digitais para expandir o seu conhecimento e transformar a sua leitura.
+                </p>
+                <h4>Conecte-se Connosco</h4>
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com/firminosam10" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+                    <a href="https://www.instagram.com/firmino_sam?igsh=aGN1ODJ4MnF1aXhz" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                    <a href="https://www.linkedin.com/in/firmino-karson-sambambi-277b36402?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+                </div>
+            </div>
+
+            <div class="footer__col">
+                <h4>Links Rápidos</h4>
+                <a href="../html/Home.html">Home</a>
+                <a href="../html/sobreNos.html">Sobre Nós</a>
+                <a href="../html/blog.html">Blog</a>
+                <a href="../html/contactos.html">Contactos</a>
+                <a href="../html/contactos.html#map">Mapa do Site</a>
+                <a href="../html/politicaPrivacidade.html">Política de Privacidade</a>
+                <a href="../html/termosUso.html">Termos de Uso</a>
+            </div>
+
+            <div class="footer__col">
+                <h4>Área de Formação</h4>
+                <a href="../html/livros.html">Engenharia</a>
+                <a href="../html/livros.html">Economia</a>
+                <a href="../html/livros.html">Direito</a>
+                <a href="../html/livros.html">Literatura</a>
+            </div>
+
+            <!-- Nova Coluna da Newsletter integrada ao seu Footer -->
+            <div class="footer__col footer__newsletter">
+                <h4>Inscreva-se para mais novidades</h4>
+                <form class="newsletter__form" action="#">
+                    <input type="email" placeholder="Seu email" required>
+                    <button type="submit" class="btn__subscribe">Inscrever</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__bar">
+            Copyright © 2026 Livraria Sambambi. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

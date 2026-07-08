@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore o catálogo completo de livros académicos, literários e digitais da Livraria Sambambi. Manuais de Engenharia, Economia, Direito e Literatura.">
+    <meta name="keywords" content="catálogo, engenharia, economia, direito, literatura, livros, pdf, e-books">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" />
+    <link rel="stylesheet" href="../css/styleHome.css">
+    <link rel="stylesheet" href="../css/livros.css">
+    <title>Catálogo de Livros | Livraria Sambambi</title>
+    
+    <!-- Rastreamento: Google Analytics Placeholder (Exame IHM) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXX-Y');
+    </script>
+    
+    <!-- Rastreamento: Meta Pixel Placeholder (Exame IHM) -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1234567890');
+        fbq('track', 'PageView');
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="nav__header">
+            <div class="nav__logo">
+                <a href="../html/Home.html" aria-label="Página Inicial"><img src="../media/Marca.png" alt=""></a>
+                <a href="../html/Home.html" class="logo">Livraria<span>Sambambi</span></a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div> 
+        <ul class="nav__links" id="nav-links">
+            <li><a href="../html/Home.html">Home</a></li>
+            <li><a href="../html/livros.html" class="active">Livros</a></li>
+            <li><a href="../html/services.html">Serviços </a></li>
+            <li><a href="../html/blog.html">Blog</a></li>
+            <li><a href="../html/sobreNos.html">Sobre Nós</a></li>
+            <li><a href="../html/contactos.html">Contactos</a></li>
+            <li>
+                <a href="login.html" class="nav__btn">Login</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="catalog__section">
+        <div class="catalog__container">
+            
+            <aside class="catalog__sidebar">
+                <h3 class="sidebar__title"><i class="ri-list-check"></i> Áreas</h3>
+                <ul class="category__list">
+                    <li><a href="#engenharia" class="active">Engenharia</a></li>
+                    <li><a href="#economia">Economia</a></li>
+                    <li><a href="#direito">Direito</a></li>
+                    <li><a href="#literatura">Literatura</a></li>
+                </ul>
+            </aside>
+
+            <div class="catalog__main-content">
+                
+                <div class="search__wrapper">
+                    <form action="#" class="search__form" id="livrosSearchForm">
+                        <div class="search__input-group">
+                            <i class="ri-search-line"></i>
+                            <input type="text" id="livrosSearchInput" placeholder="Pesquisar por título ou autor...">
+                        </div>
+                        <button type="submit" class="btn__search">Pesquisar</button>
+                    </form>
+                </div>
+
+                <div class="search__active-banner" id="searchActiveBanner">
+                    <span id="searchActiveText"></span>
+                    <button type="button" class="btn__clear-search" id="clearSearchBtn">
+                        <i class="ri-close-line"></i> Limpar pesquisa
+                    </button>
+                </div>
+
+                <div class="promo__banner">
+                    <div class="promo__text">
+                        <span>Super Destaque</span>
+                        <h2>Manuais Académicos de Engenharia</h2>
+                        <p>Encontre aqui a melhor base teórica e prática para impulsionar a sua formação universitária.</p>
+                    </div>
+                    <div class="promo__image">
+                        <img src="../media/library.jpg" alt="Ilustração de Livros">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <section class="books__showcase">
+        <!-- ÁREA ENGENHARIA -->
+        <div class="showcase__container" id="engenharia">
+            <h2 class="showcase__title">Livros de Engenharia</h2>
+            <p class="showcase__subtitle">Explore os manuais mais requisitados para o seu curso</p>
+            
+            <div class="books__row">
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/Livro 1.jpg" alt="Engenharia de Software">
+                    </div>
+                    <div class="book__info">
+                        <h4>Introdução à Engenharia de Software</h4>
+                        <p>Autor: Ian Sommerville</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/Livro 2.jpg" alt="Cálculo Diferencial">
+                    </div>
+                    <div class="book__info">
+                        <h4>Cálculo e Geometria Analítica</h4>
+                        <p>Autor: James Stewart</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/Livro 3.jpg" alt="Estruturas de Dados">
+                    </div>
+                    <div class="book__info">
+                        <h4>Algoritmos e Estruturas de Dados</h4>
+                        <p>Autor: Prof. Osvaldo</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/Livro 4.jpg" alt="Redes de Computadores">
+                    </div>
+                    <div class="book__info">
+                        <h4>Redes de Computadores e a Internet</h4>
+                        <p>Autor: James Kurose</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/images (6).jpg" alt="Inteligência Artificial">
+                    </div>
+                    <div class="book__info">
+                        <h4>Inteligência Artificial</h4>
+                        <p>Autor: Stuart Russell</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/images (7).jpg" alt="Cálculo Diferencial">
+                    </div>
+                    <div class="book__info">
+                        <h4>Cálculo Diferencial e Integral</h4>
+                        <p>Autor: James Stewart</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/7.jpg" alt="Física Aplicada">
+                    </div>
+                    <div class="book__info">
+                        <h4>Física Aplicada à Engenharia</h4>
+                        <p>Autor: David Halliday</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/8.jpg" alt="Sistemas Operativos">
+                    </div>
+                    <div class="book__info">
+                        <h4>Sistemas Operativos Modernos</h4>
+                        <p>Autor: Andrew Tanenbaum</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ÁREA ECONOMIA -->
+        <div class="showcase__container" id="economia" style="margin-top: 5rem;">
+            <h2 class="showcase__title">Livros de Economia</h2>
+            <p class="showcase__subtitle">Aprofunde os seus conhecimentos financeiros e de mercado</p>
+            
+            <div class="books__row">
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/eco1.jpg" alt="Princípios de Microeconomia">
+                    </div>
+                    <div class="book__info">
+                        <h4>Princípios de Microeconomia</h4>
+                        <p>Autor: N. Gregory Mankiw</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/eco2.jpg" alt="Finanças Corporativas">
+                    </div>
+                    <div class="book__info">
+                        <h4>Finanças Corporativas</h4>
+                        <p>Autor: Stephen Ross</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/eco3.jpg" alt="Contabilidade Financeira">
+                    </div>
+                    <div class="book__info">
+                        <h4>Contabilidade Financeira</h4>
+                        <p>Autor: Walter Harrison</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/eco4.jpg" alt="Econometria Aplicada">
+                    </div>
+                    <div class="book__info">
+                        <h4>Econometria Aplicada</h4>
+                        <p>Autor: Damodar Gujarati</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/images (8).jpg" alt="Macroeconomia Moderna">
+                    </div>
+                    <div class="book__info">
+                        <h4>Macroeconomia Moderna</h4>
+                        <p>Autor: Olivier Blanchard</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/images (9).jpg" alt="Gestão Empresarial">
+                    </div>
+                    <div class="book__info">
+                        <h4>Gestão Empresarial</h4>
+                        <p>Autor: Idalberto Chiavenato</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/images (1).jpg" alt="Marketing Estratégico">
+                    </div>
+                    <div class="book__info">
+                        <h4>Marketing Estratégico</h4>
+                        <p>Autor: Philip Kotler</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/eco4.jpg" alt="Comércio Internacional">
+                    </div>
+                    <div class="book__info">
+                        <h4>Comércio Internacional</h4>
+                        <p>Autor: Paul Krugman</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ÁREA DIREITO -->
+        <div class="showcase__container" id="direito" style="margin-top: 5rem;">
+            <h2 class="showcase__title">Livros de Direito</h2>
+            <p class="showcase__subtitle">Consulte a doutrina jurídica e a legislação essencial</p>
+            
+            <div class="books__row">
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/dir1.jpg" alt="Direito Constitucional">
+                    </div>
+                    <div class="book__info">
+                        <h4>Direito Constitucional Angolano</h4>
+                        <p>Autor: Dr. António dos Santos</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/dir2.jpg" alt="Código Civil">
+                    </div>
+                    <div class="book__info">
+                        <h4>Código Civil Comentado</h4>
+                        <p>Autor: Dr. Francisco João</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/dir3.jpg" alt="Direito Internacional">
+                    </div>
+                    <div class="book__info">
+                        <h4>Direito Internacional Público</h4>
+                        <p>Autor: Valerio Mazzuoli</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/dir4.jpg" alt="Direito Penal">
+                    </div>
+                    <div class="book__info">
+                        <h4>Introdução ao Direito Penal</h4>
+                        <p>Autor: Rogério Greco</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/dir1.jpg" alt="Direito Administrativo">
+                    </div>
+                    <div class="book__info">
+                        <h4>Direito Administrativo Angolano</h4>
+                        <p>Autor: Dr. Carlos Feijó</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/dir2.jpg" alt="Direito do Trabalho">
+                    </div>
+                    <div class="book__info">
+                        <h4>Direito do Trabalho</h4>
+                        <p>Autor: Dra. Isabel Fonseca</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/dir3.jpg" alt="Direito Comercial">
+                    </div>
+                    <div class="book__info">
+                        <h4>Direito Comercial e Empresarial</h4>
+                        <p>Autor: Fábio Ulhoa Coelho</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/dir4.jpg" alt="Direitos Humanos">
+                    </div>
+                    <div class="book__info">
+                        <h4>Direitos Humanos Fundamentais</h4>
+                        <p>Autor: Norberto Bobbio</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ÁREA LITERATURA -->
+        <div class="showcase__container" id="literatura" style="margin-top: 5rem;">
+            <h2 class="showcase__title">Livros de Literatura</h2>
+            <p class="showcase__subtitle">Os grandes clássicos nacionais e internacionais</p>
+            
+            <div class="books__row">
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/lit1.jpg" alt="Sagrada Esperança">
+                    </div>
+                    <div class="book__info">
+                        <h4>Sagrada Esperança</h4>
+                        <p>Autor: Agostinho Neto</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/lit2.jpg" alt="Mayombe">
+                    </div>
+                    <div class="book__info">
+                        <h4>Mayombe</h4>
+                        <p>Autor: Pepetela</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/lit3.jpg" alt="Terra Sonâmbula">
+                    </div>
+                    <div class="book__info">
+                        <h4>Terra Sonâmbula</h4>
+                        <p>Autor: Mia Couto</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/lit4.jpg" alt="Dom Casmurro">
+                    </div>
+                    <div class="book__info">
+                        <h4>Dom Casmurro</h4>
+                        <p>Autor: Machado de Assis</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/images (3).jpg" alt="Luuanda">
+                    </div>
+                    <div class="book__info">
+                        <h4>Luuanda</h4>
+                        <p>Autor: José Luandino Vieira</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/images (5).jpg" alt="A Geração da Utopia">
+                    </div>
+                    <div class="book__info">
+                        <h4>A Geração da Utopia</h4>
+                        <p>Autor: Pepetela</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/Livro 3.jpg" alt="Memórias Póstumas de Brás Cubas">
+                    </div>
+                    <div class="book__info">
+                        <h4>Memórias Póstumas de Brás Cubas</h4>
+                        <p>Autor: Machado de Assis</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__box reveal">
+                    <div class="book__image">
+                        <img src="../media/lit4.jpg" alt="Nação Crioula">
+                    </div>
+                    <div class="book__info">
+                        <h4>Nação Crioula</h4>
+                        <p>Autor: José Eduardo Agualusa</p>
+                        <div class="book__actions">
+                            <button class="btn__read">Fazer Leitura</button>
+                            <button class="btn__download" title="Baixar PDF"><i class="ri-download-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="no__results" id="noResultsMessage">
+            <i class="ri-search-eye-line"></i>
+            <h3>Nenhum livro encontrado</h3>
+            <p>Não encontrámos nenhum título correspondente à sua pesquisa. Tente outro nome, autor ou categoria.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO (Com a newsletter inclusa) -->
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <div class="footer__logo">
+                    <a href="../html/Home.html" aria-label="Página Inicial"><img src="../media/Marca.png" alt="Logo"></a>
+                    <a href="../html/Home.html" class="logo">Livraria<span>Sambambi</span></a>
+                </div>
+                <p>
+                    Descubra livros académicos, literários e digitais para expandir o seu conhecimento e transformar a sua leitura.
+                </p>
+                <h4>Conecte-se Connosco</h4>
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com/firminosam10" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+                    <a href="https://www.instagram.com/firmino_sam?igsh=aGN1ODJ4MnF1aXhz" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                    <a href="https://www.linkedin.com/in/firmino-karson-sambambi-277b36402?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+                </div>
+            </div>
+
+            <div class="footer__col">
+                <h4>Links Rápidos</h4>
+                <a href="../html/Home.html">Home</a>
+                <a href="../html/sobreNos.html">Sobre Nós</a>
+                <a href="../html/blog.html">Blog</a>
+                <a href="../html/contactos.html">Contactos</a>
+                <a href="../html/contactos.html#map">Mapa do Site</a>
+                <a href="../html/politicaPrivacidade.html">Política de Privacidade</a>
+                <a href="../html/termosUso.html">Termos de Uso</a>
+            </div>
+
+            <div class="footer__col">
+                <h4>Área de Formação</h4>
+                <a href="../html/livros.html">Engenharia</a>
+                <a href="../html/livros.html">Economia</a>
+                <a href="../html/livros.html">Direito</a>
+                <a href="../html/livros.html">Literatura</a>
+            </div>
+
+            <!-- Nova Coluna da Newsletter integrada ao seu Footer -->
+            <div class="footer__col footer__newsletter">
+                <h4>Inscreva-se para mais novidades</h4>
+                <form class="newsletter__form" action="#">
+                    <input type="email" placeholder="Seu email" required>
+                    <button type="submit" class="btn__subscribe">Inscrever</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__bar">
+            Copyright © 2026 Livraria Sambambi. Todos os direitos reservados.
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

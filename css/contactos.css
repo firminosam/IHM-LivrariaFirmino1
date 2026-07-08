@@ -1,0 +1,307 @@
+:root {
+    --primary-color: #0f172a;
+    --primary-color-dark: #1e293b;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --extra-light: #ffffff;
+    --white: #ffffff;
+    --header-font: 'Poppins', sans-serif;
+    --max-width: 1200px;
+}
+
+/* Configuração da Secção Geral de Contactos */
+.contact__section {
+    padding: 2.5rem 1rem 5rem 1rem;
+    padding-top: calc(80px + 2.5rem); /* compensa a nav fixa */
+    background-color: var(--extra-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__container {
+    max-width: var(--max-width);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact__info {
+    text-align: center;
+}
+
+.contact__info h2 {
+    font-family: var(--header-font);
+    font-size: 2.5rem;
+    color: var(--primary-color-dark);
+    margin-bottom: 1rem;
+}
+
+.contact__description {
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Estilização da Imagem Central */
+.contact__image {
+    width: 100%;
+    max-height: 400px;
+    margin-bottom: 2.5rem;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(18, 17, 15, 0.1); /* Utiliza o tom do --text-dark com opacidade */
+}
+
+.contact__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Bloco Único de Informações de Contacto */
+.contact__details-single {
+    margin: 0 auto;
+    max-width: 850px;
+    color: var(--text-dark);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.contact__details-single p {
+    margin-bottom: 0.5rem;
+}
+
+.contact__details-single strong {
+    color: var(--primary-color-dark);
+}
+
+.contact__details-single i {
+    color: var(--primary-color);
+    margin-right: 0.3rem;
+    font-size: 1.2rem;
+}
+
+/* Separador horizontal (|) entre os contactos da mesma linha */
+.contact__details-single span {
+    margin: 0 1.5rem;
+    color: var(--text-light);
+    font-weight: 300;
+}
+
+.hours-line {
+    margin-top: 0.8rem;
+    color: var(--text-light);
+}
+
+.contact__hours {
+    margin: 1.5rem auto 0 auto;
+    max-width: 850px;
+    text-align: center;
+}
+
+.contact__hours .hours-line {
+    margin-top: 0.3rem;
+}
+
+.store__status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1.1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.store__status--open {
+    background-color: rgba(34, 197, 94, 0.12);
+    color: #16a34a;
+}
+
+.store__status--closed {
+    background-color: rgba(239, 68, 68, 0.12);
+    color: #dc2626;
+}
+
+html.dark-mode .store__status--open {
+    background-color: rgba(34, 197, 94, 0.15);
+    color: #4ade80;
+}
+
+html.dark-mode .store__status--closed {
+    background-color: rgba(239, 68, 68, 0.15);
+    color: #f87171;
+}
+
+/* Responsividade para ecrãs pequenos */
+@media (max-width: 768px) {
+    .contact__details-single span {
+        display: none;
+    }
+    .contact__details-single p {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        align-items: center;
+    }
+}
+
+/* ==========================================================================
+   FORMULÁRIO E MAPA (EXAME IHM)
+   ========================================================================== */
+/* Layout Duas Colunas */
+@media (min-width: 992px) {
+    .contact__container {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 4rem;
+        align-items: flex-start;
+    }
+    .contact__info {
+        text-align: left;
+    }
+    .contact__description {
+        margin: 0 0 2rem 0;
+    }
+}
+
+/* Formulário de Contacto */
+.contact__form-wrapper {
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    border: 1px solid #e2e8f0;
+}
+
+.contact__form-wrapper h2 {
+    font-family: var(--header-font);
+    font-size: 1.8rem;
+    color: var(--primary-color-dark);
+    margin-bottom: 1.5rem;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+}
+
+.form__group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.form__group input,
+.form__group textarea {
+    padding: 0.8rem 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    outline: none;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.form__group input:focus,
+.form__group textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(204, 137, 67, 0.1);
+}
+
+.error-msg {
+    font-size: 0.8rem;
+    color: #ef4444;
+    margin-top: 0.2rem;
+    display: none;
+}
+
+.btn__submit {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.85rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn__submit:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.form__success-msg {
+    font-size: 0.95rem;
+    color: #10b981;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* Secção do Mapa */
+.map__section {
+    padding: 5rem 1rem;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.map__container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.map__title {
+    font-family: var(--header-font);
+    font-size: 2rem;
+    color: var(--primary-color-dark);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.map__subtitle {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.map__box {
+    width: 100%;
+    height: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid #cbd5e1;
+    position: relative;
+}
+
+.map__placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #f1f5f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text-light);
+}
+
+.map__placeholder i {
+    font-size: 3rem;
+    color: var(--primary-color);
+}

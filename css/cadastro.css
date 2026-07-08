@@ -1,0 +1,262 @@
+:root {
+    --primary-color: #cc8943;
+    --primary-color-dark: #002954;
+    --text-dark: #12110f;
+    --text-light: #6b7280;
+    --extra-light: #ffffff;
+    --white: #ffffff;
+    --header-font: "Merriweather", serif;
+    --max-width: 1200px;
+}
+
+/* Reset total da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    background-color: var(--extra-light);
+    color: var(--text-dark);
+    font-family: Arial, sans-serif;
+}
+
+/* Centralização absoluta do formulário na tela */
+.login {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+/* Caixa Branca do Formulário */
+.login-box {
+    background-color: var(--white);
+    width: 100%;
+    max-width: 420px;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(18, 17, 15, 0.08);
+}
+
+.login-box h2 {
+    font-family: var(--header-font), sans-serif;
+    color: var(--primary-color-dark);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.cadastro__subtitle {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+/* Estrutura do Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+form input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    background-color: var(--white);
+    margin-bottom: 1.5rem; /* Espaço entre os campos */
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito ao clicar no campo de texto */
+form input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(204, 137, 67, 0.1);
+}
+
+/* Botão Entrar */
+form button {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+form button:hover {
+    background-color: var(--primary-color-dark);
+}
+
+/* Bloco de Links Inferiores */
+.login-links {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Espaçamento igual entre as linhas de links */
+}
+
+.login-links a {
+    color: var(--primary-color-dark);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.login-links a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Ajuste específico para o link "Voltar à página inicial" */
+.login-links a[href*="Home.html"] {
+    font-weight: normal;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-top: 0.5rem;
+}
+
+.login-links a[href*="Home.html"]:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Responsividade para Ecrãs Pequenos (Telemóveis) */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 2rem 1.5rem;
+    }
+    
+    .login-box h2 {
+        font-size: 1.7rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* ==========================================================================
+   IHM EXAME: DARK MODE & ERROR MESSAGES FOR LOGIN
+   ========================================================================== */
+html.dark-mode {
+    --white: #090d16;
+    --extra-light: #0f172a;
+    --text-dark: #f8fafc;
+    --text-light: #94a3b8;
+    --primary-color-dark: #e2b13c;
+    --primary-color: #cbd5e1;
+}
+
+html.dark-mode body {
+    background-color: var(--extra-light);
+    color: var(--text-dark);
+}
+
+html.dark-mode .login-box {
+    background-color: var(--white);
+    border: 1px solid #1f2937;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+html.dark-mode form input {
+    background-color: var(--extra-light);
+    border-color: #1f2937;
+    color: var(--text-dark);
+}
+
+html.dark-mode form input:focus {
+    border-color: var(--primary-color-dark);
+}
+
+html.dark-mode form button {
+    background-color: var(--primary-color-dark);
+    color: #0f172a;
+}
+
+html.dark-mode form button:hover {
+    background-color: #ffffff;
+    color: #0f172a;
+}
+
+html.dark-mode .login-links a {
+    color: var(--primary-color-dark);
+}
+
+html.dark-mode .login-links a:hover {
+    color: #ffffff;
+}
+
+/* Validation styles */
+.error-msg {
+    color: #ef4444 !important;
+    font-size: 0.82rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    display: none;
+    font-weight: 500;
+    text-align: left;
+}
+
+.error-msg.visible {
+    display: block;
+}
+
+input.input-error {
+    border-color: #ef4444 !important;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15) !important;
+}
+
+/* Botão flutuante de alternância de Modo Escuro (gerado via JS - main.js) */
+.dark-mode-toggle--floating {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--primary-color-dark);
+    color: var(--white);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    z-index: 999;
+}
+
+.dark-mode-toggle--floating:hover {
+    transform: scale(1.08);
+}
+
+html.dark-mode .dark-mode-toggle--floating {
+    background-color: #e2b13c;
+    color: #0f172a;
+}
