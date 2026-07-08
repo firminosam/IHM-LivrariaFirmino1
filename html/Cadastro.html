@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" />
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <title>Criar Conta - Livraria Sambambi</title>
+</head>
+<body>
+
+<main class="login">
+    <div class="login-box">
+
+        <h2>Criar Conta</h2>
+        <p class="cadastro__subtitle">Preencha os seus dados para se juntar à Livraria Sambambi.</p>
+
+        <form id="cadastroForm" novalidate>
+
+            <label for="cadastroEmail">E-mail</label>
+            <input type="email" id="cadastroEmail" placeholder="Digite o seu e-mail" required>
+            <span class="error-msg" id="cadastroEmailError"></span>
+
+            <label for="cadastroContacto">Contacto</label>
+            <input type="tel" id="cadastroContacto" placeholder="Ex: 934638979" required>
+            <span class="error-msg" id="cadastroContactoError"></span>
+
+            <label for="cadastroSenha">Palavra-passe</label>
+            <input type="password" id="cadastroSenha" placeholder="Crie uma senha" required>
+            <span class="error-msg" id="cadastroSenhaError"></span>
+
+            <button type="submit"><i class="ri-user-add-line"></i> Cadastrar</button>
+
+        </form>
+
+        <div class="login-links">
+            <p>Já tem conta? <a href="login.html">Fazer login</a></p>
+        </div>
+
+    </div>
+</main>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/cadastro.js"></script>
+</body>
+</html>
